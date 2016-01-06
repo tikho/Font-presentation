@@ -3,6 +3,7 @@ body{
 }
 
 .text-editable{
+	word-break: break-all;
 	outline-style:none;
 	user-modify:read-write;
 	-moz-user-modify:read-write;
@@ -23,6 +24,32 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center 0;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	/*padding: 20vw auto;*/
+}
+
+.cover{
+	/*background-image: url(images/cover.jpeg);*/
+	background-color: black;
+	height: 60vw;
+}
+
+.category{
+	padding-top: 25vw;
+	text-align: center;
+	font-size: 0.8vw;
+	text-transform: uppercase;
+	letter-spacing: 1vw;
+	color: white;
+}
+
+.cover-text{
+	margin: 0.5em;
+	text-align: center;
+	font-size: 2vw;
+	letter-spacing: 0.4vw;
+	color: white;
 }
 
 .book{
@@ -41,19 +68,18 @@ img {
 }
 
 .solo-letter{
-	position: absolute;
+	/*position: absolute;*/
 	float: left;
 
 	max-width: 18%;
 	padding-top: 15%;
-	margin-left: 9%;
+	margin-left: 10%;
 	text-align: left;
-	font-family: "Helvetica Neue", sans-serif;
 	font-size: 27vw;
 }
 
 .paper{
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/68/1b/1d/681b1d53213fd648485d14502aed0cf4.jpg);
+	background-image: url(images/paper.jpg);
 	height: 60vw;
 }
 
@@ -63,9 +89,8 @@ img {
 	padding-top: 20%;
 	/*border: 1px solid black;*/
 	text-align: center;
-	font-family: serif;
 	font-style: italic;
-	font-size: 5.4vw;
+	font-size: 7.4vw;
 }
 /*
 .paper .author-text{
@@ -106,14 +131,24 @@ img {
 
 .huge-text{
 	text-align: center;
-	margin: 0 auto;
-	line-height: 26vw;
+	margin: 2vw auto;
+	font-size: 6vw;
+	line-height: 3vw;
+}
+
+.huge-text-number{
+	text-align: center;
+	margin-left: 5%	;
+	text-transform: uppercase;
+	letter-spacing: 5vw;
+	font-style: italic;
 	font-size: 30vw;
+	line-height: 30vw;
 }
 
 .letter-spacing{
 	text-transform: uppercase;
-	font-size: 13vw;
+	font-size: 7vw;
 	text-align: center;
 	letter-spacing: 0.1vw;
 	margin-bottom: 50vw;
