@@ -11,10 +11,13 @@ $(function(){
 
       space = 0.015;
       var lookingAtHuge = hugeScrolledIntoView();
+      var lookingAtLetterSpacing = letterSpacingScrolledIntoView();
        
        if (st > lastScrollTop){
            // downscroll code
-           increaseLetterSpace(space);
+           if (lookingAtLetterSpacing){
+              increaseLetterSpace(space);
+           }
            if (lookingAtHuge){
               font_weight_counter += font_weight_step;
               if (font_weight_counter % 100 == 0){
@@ -23,7 +26,9 @@ $(function(){
            }
        } else {
           // upscroll code
-          decreaseLetterSpace(space);
+          if (lookingAtLetterSpacing){
+              decreaseLetterSpace(space);
+          }
            if (lookingAtHuge){
               font_weight_counter -= font_weight_step;
               if (font_weight_counter % 100 == 0){
@@ -89,6 +94,21 @@ function decreaseFontWeight(weight) {
 function hugeScrolledIntoView()
 {
     var $elem = $('#font-size-changing');
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+
+function letterSpacingScrolledIntoView()
+{
+    var $elem = $('#letter-spacing');
     var $window = $(window);
 
     var docViewTop = $window.scrollTop();

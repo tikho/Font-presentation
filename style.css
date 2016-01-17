@@ -52,6 +52,53 @@ img {
 	color: white;
 }
 
+.letter-monument{
+	text-align: center;
+	margin: 12vw;
+	max-width: 90vw;
+	min-height: 30vw;
+}
+
+.line-decoration-thick{
+	height: 3vw;
+	border-bottom: 0.2vw solid black;
+}
+
+.first-line{
+	font-size: 12vw;
+	font-weight: 300;
+}
+
+.second-line{
+	padding-top: 3vw;
+	font-size: 3.5vw;
+	font-weight: 700;
+}
+
+.third-line{
+	padding-top: 3vw;
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+.forth-line{
+	padding-top: 2vw;
+	background-color: orange;
+	font-size: 12vw;
+	color:white;
+	padding-bottom: 3vw;
+}
+
+.line-decoration-thick-top{
+	height: 3vw;
+	border-top: 0.2vw solid black;
+}
+
+.fifth-line{
+	font-weight: 400;
+}
+
+
 .book{
 	background-image: url(images/book.jpg);
 	height: 60vw;
@@ -151,6 +198,22 @@ img {
 	font-size: 7vw;
 	text-align: center;
 	letter-spacing: 0.1vw;
-	margin-bottom: 50vw;
+	/*margin-bottom: 50vw;*/
 }
+
+.alphabet {
+
+  	text-transform: uppercase;
+
+  	max-width: 90vw;
+  	letter-spacing: 5vw;
+  	line-height: 15vw;
+  	margin: 0px auto;
+	font-size: 170px;
+	text-align: center;
+ 	display: table;
+ 	font-weight: 100;
+}
+
+
 
